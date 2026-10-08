@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Project Doctor — sample audit</title><style>body{background:#101722;color:#eff4fa;font:16px/1.6 system-ui;max-width:850px;margin:40px auto;padding:20px}a{color:#9ce7bd}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#172331;padding:28px;border-radius:12px}</style><a href="index.html">Back to Project Doctor</a><p>This sample uses a synthetic fixture, not customer data.</p><pre># Project Doctor — Documentation Audit
+
+Repository: (synthetic sample)
+Mode: READ_ONLY | Documents scanned: 2 | Findings: 2
+
+## Findings
+
+### PD-001 — broken_local_link (high)
+Location: README.md:3
+Reference: docs/deploy-old.md
+
+### PD-002 — review_marker (review)
+Location: docs/architecture.md:2
+Reference: TODO
+
+## Limitations
+
+- Path checks are not semantic accuracy guarantees.
+- Review markers can be valid historical notes.
+- Archives, snapshots, large files and non-Markdown files are not audited by default.
+- No repair is performed. Proposed patches require customer review.
+
+## Customer-controlled next step
+
+Verify findings, review a proposed diff, approve changes, rerun the checks.
+</pre></html>
